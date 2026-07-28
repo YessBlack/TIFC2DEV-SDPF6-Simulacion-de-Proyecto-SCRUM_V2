@@ -92,13 +92,41 @@ section h2{
     box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-footer{
-    background:#d35400 !important;
-    color:#fff !important;
+.footer {
+  background: linear-gradient(135deg, #FFF8E7, #F3E460);
+  padding: 50px 0;
 }
 
-footer h2{
-    color:#fff;
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, .3);
+}
+
+.footer p,
+.footer li,
+.footer small {
+  color: #333;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.footer-link i {
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: #d35400;
+  transform: translateX(5px);
 }
 
 @media (max-width:992px){
