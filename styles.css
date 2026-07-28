@@ -8,245 +8,146 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:linear-gradient(135deg,#FFF8E7,#F3E460);
     color:#333;
-    min-height:100vh;
+    padding-top:90px;
 }
 
-header{
-    width:100%;
-    background:#fff;
-    position:fixed;
-    top:0;
-    left:0;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-    z-index:1000;
+.navbar-brand{
+    color:#d35400 !important;
 }
 
-.navbar{
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-}
-
-.logo{
-    flex:1;
-}
-
-.logo a{
-    text-decoration:none;
-    font-size:30px;
-    font-weight:bold;
-    color:#d35400;
-}
-
-.menu{
-    flex:1;
-    display:flex;
-    justify-content:flex-end;
-    gap:40px;
-    list-style:none;
-}
-
-.menu a{
-    text-decoration:none;
-    color:#333;
-    font-weight:bold;
-    font-size:18px;
+.nav-link{
+    color:#333 !important;
     transition:.3s;
 }
 
-.menu a:hover{
-    color:#e67e22;
-}
-
-main{
-    width:90%;
-    max-width:1200px;
-    margin:120px auto 40px;
+.nav-link:hover{
+    color:#e67e22 !important;
 }
 
 .inicio{
     background:#fff;
     border-radius:20px;
-    padding:40px;
+    padding:50px;
     box-shadow:0 10px 30px rgba(0,0,0,.1);
-    margin-bottom:40px;
 }
 
-.contenido{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:50px;
-    flex-wrap:wrap;
-}
-
-.texto{
-    flex:1;
-    min-width:320px;
-}
-
-.texto h1{
+.inicio h1{
     color:#d35400;
-    font-size:42px;
-    margin-bottom:20px;
 }
 
-.texto h2{
+.inicio h2{
     color:#e67e22;
-    margin:25px 0 15px;
+    margin-top:25px;
+    margin-bottom:15px;
 }
 
-.texto p{
+.inicio p{
     line-height:1.8;
     text-align:justify;
-    margin-bottom:20px;
 }
 
-.texto ul{
+.inicio ul{
     margin-left:20px;
-    margin-bottom:30px;
+    line-height:1.8;
 }
 
-.texto li{
-    margin-bottom:10px;
-}
-
-.imagen{
-    flex:1;
-    text-align:center;
-    min-width:320px;
-}
-
-.imagen img{
-    width:100%;
+.inicio img{
     max-width:500px;
+    width:100%;
     border-radius:20px;
     box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-.boton{
-    display:inline-block;
-    background:#f39c12;
-    color:#fff;
-    text-decoration:none;
-    padding:14px 30px;
-    border-radius:10px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.boton:hover{
-    background:#d68910;
-}
-
-.articulos{
-    margin-top:40px;
-}
-
-.articulos h2{
-    text-align:center;
+section h2{
     color:#d35400;
-    font-size:32px;
-    margin-bottom:30px;
 }
 
-.articulo{
-    background:#fff;
-    padding:30px;
+.card{
+    border:none;
     border-radius:20px;
-    margin-bottom:30px;
     box-shadow:0 10px 25px rgba(0,0,0,.1);
     transition:.3s;
 }
 
-.articulo:hover{
+.card:hover{
     transform:translateY(-5px);
 }
 
-.articulo h3{
-    color:#e67e22;
-    margin-bottom:15px;
+.card-body{
+    padding:30px;
 }
 
-.articulo p{
+.card h3{
+    color:#e67e22;
+}
+
+.card p{
     line-height:1.8;
     text-align:justify;
 }
 
-#footer{
-    background:#d35400;
+.card img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+footer{
+    background:#d35400 !important;
+    color:#fff !important;
+}
+
+footer h2{
     color:#fff;
-    text-align:center;
-    padding:40px 20px;
-    margin-top:50px;
 }
 
-#footer h2{
-    color:#fff;
-    margin-bottom:20px;
-}
+@media (max-width:992px){
 
-#footer ul{
-    list-style:none;
-    margin-bottom:20px;
-}
-
-#footer li{
-    margin-bottom:8px;
-}
-
-#footer p{
-    margin-bottom:10px;
-    line-height:1.6;
-}
-
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        padding:20px;
-        gap:20px;
+    .inicio{
+        padding:35px;
     }
 
-    .logo{
-        flex:none;
+    .inicio h1{
+        text-align:center;
+        font-size:2.2rem;
     }
 
-    .menu{
-        flex:none;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:15px;
+    .inicio p{
+        text-align:left;
     }
 
-    main{
-        margin-top:180px;
+    .inicio ul{
+        margin-top:20px;
     }
 
-    .contenido{
-        flex-direction:column;
-    }
-
-    .texto{
+    .card{
         text-align:center;
     }
 
-    .texto h1{
-        font-size:32px;
-    }
-
-    .texto p{
+    .card p{
         text-align:left;
     }
 
-    .texto ul{
-        text-align:left;
+    .card img{
+        margin-top:20px;
+    }
+}
+
+@media (max-width:576px){
+
+    body{
+        padding-top:80px;
     }
 
-    .imagen img{
-        max-width:100%;
+    .inicio{
+        padding:25px;
+    }
+
+    .inicio h1{
+        font-size:1.8rem;
+    }
+
+    .navbar-brand{
+        font-size:1.4rem !important;
     }
 }
