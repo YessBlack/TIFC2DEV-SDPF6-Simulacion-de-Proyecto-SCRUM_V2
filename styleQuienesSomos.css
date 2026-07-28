@@ -1,60 +1,98 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-body{
-     background:linear-gradient(135deg,#FFF8E7,#F3E460);
+body {
+  background: linear-gradient(135deg, #FFF8E7, #F3E460);
 }
 
-.card-header{
-    background:linear-gradient(135deg,#FFF8E7,#F3E460);
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.brand-text,
+.title {
+  color: #d35400;
+  font-weight: bold;
+}
+
+.nav-active {
+  color: #d35400;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.nav-link:hover {
+  color: #d35400 !important;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #FFF8E7, #F3E460);
 
 }
 
-.card.text-center{
-    background:linear-gradient(135deg,#FFF8E7,#F3E460);
-    margin: 50px auto;
-    border: none;
+.card.text-center {
+  background: linear-gradient(135deg, #FFF8E7, #F3E460);
+  margin: 50px auto;
+  border: none;
 
 }
 
-.card-body{
-    background-color:white;
+.card-body {
+  background-color: white;
 }
 
-#participantes{
-    margin-left: 0;
-    margin-top: 100px;
-    background:linear-gradient(135deg,#FFF8E7,#F3E460)
+#participantes {
+  margin-left: 0;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #FFF8E7, #F3E460)
 }
 
-card-text{
-    padding: 100rem;
-}
-
-
-footer{
-    background:#d35400 !important;
-    color:#fff !important;
-}
-
-footer h2{
-    color:#fff;
+card-text {
+  padding: 100rem;
 }
 
 
-#title-participantes{
-    color:#d35400 ;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
+/** Footer */
+.footer {
+  background: linear-gradient(135deg, #FFF8E7, #F3E460);
+  padding: 50px 0;
 }
 
+.footer-list li {
+  margin-bottom: 8px;
+}
 
-footer {
-  width: 100%;            
-  box-sizing: border-box; 
-  margin: 0;             
-  padding: 20px;         
+.footer-divider {
+  border-color: rgba(255, 255, 255, .3);
+}
+
+.footer p,
+.footer li,
+.footer small {
+  color: #333;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.footer-link i {
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  color: #d35400;
+  transform: translateX(5px);
 }
