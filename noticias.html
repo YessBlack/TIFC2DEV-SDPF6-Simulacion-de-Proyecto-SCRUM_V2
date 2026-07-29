@@ -1,166 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="noticias.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="noticias.css" />
 </head>
 
 <body>
+  <header class="header sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+            <img src="img/img5.png" alt="Logo" class="rounded-circle" width="40" height="40"
+              style="object-fit: cover" />
+            <span class="brand-text">La Feria de las Flores</span>
+          </a>
 
-       <main class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <h1 class="text-center fw-bold text-warning mb-5">
-            Noticias de la Feria de las Flores
-        </h1>
-
-        <div class="row g-4">
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="img/img4.png" class="card-img-top" alt="Desfile de Silleteros">
-                    <div class="card-body">
-                        <span class="badge bg-success">
-                            Tradición
-                        </span>
-                        <h4 class="mt-3">
-                            Desfile de Silleteros
-                        </h4>
-
-                        <p>
-                            El Desfile de los Silleteros es el evento central y más emblemático de la Feria de las
-                            Flores que se realiza cada año en Medellín, Antioquia (Colombia).
-
-                            ¿Qué es? Es un colorido desfile donde campesinos de la vereda Santa Elena (y otros
-                            corregimientos cercanos) cargan sobre sus espaldas silletas hechas artesanalmente con miles
-                            de flores naturales.
-
-                            El origen: Las silletas eran tradicionalmente un medio de transporte de carga y personas
-                            utilizado por los silleteros en la época colonial y republicana para bajar sus productos
-                            agrícolas y flores hasta Medellín.
-
-                            El significado: Es un homenaje a la tradición, al trabajo del campesino antioqueño, a la
-                            cultura silletera y a la riqueza floral de la región, la cual fue declarada Patrimonio
-                            Cultural de la Nación.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="img/images.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <span class="badge bg-primary">
-                            Música
-                        </span>
-                        <h4 class="mt-3">
-                            Conciertos
-                        </h4>
-
-                        <p>
-                            Los conciertos de la Feria de las Flores se dividen en dos grandes experiencias:
-
-                            El Súper Concierto (Estadio Atanasio Girardot): El evento masivo privado más esperado, que
-                            reúne a figuras estelares de la música urbana, popular, vallenata y tropical (con artistas
-                            como Carín León y Silvestre Dangond).
-
-                            Conciertos y Tablados Gratuitos: Eventos abiertos al público distribuidos por comunas,
-                            corregimientos y parques culturales, que llevan orquestas, música tradicional y fiesta
-                            popular a toda la ciudad.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow">
-                    <img src="img/img2.png" class="card-img-top">
-                    <div class="card-body">
-                        <span class="badge bg-danger">
-                            Cultura
-                        </span>
-                        <h4 class="mt-3">
-                            Eventos culturales
-                        </h4>
-
-                        <p>
-                            La cultura de la Feria de las Flores es la máxima expresión de la identidad antioqueña,
-                            donde convergen la tradición campesina, la hospitalidad y la alegría de su gente. Gira en
-                            torno al orgullo por el campo, la riqueza floral de la región y la música popular como la
-                            trova y el despecho, convirtiendo las calles en un punto de encuentro para celebrar las
-                            raíces, el folclor y la vida en comunidad.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6">
-                <div class="card h-100 shadow">
-                    <img src="img/bandeja.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark">
-                            Gastronomía
-                        </span>
-                        <h4 class="mt-3">
-                            Gastronomía Antioqueña
-                        </h4>
-
-                        <p>
-                            La gastronomía paisa es una cocina tradicional, abundante y reconfortante, nacida de la
-                            herencia campesina de la región antioqueña. Se caracteriza por el uso de ingredientes
-                            locales como el maíz, el fríjol, el plátano, la carne de res y el cerdo, dando como
-                            resultado platos tan emblemáticos como la bandeja paisa, la arepa de maíz, la mazamorra y
-                            los calentaos, cargados de sabor y tradición hogareña.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-6">
-                <div class="card h-100 shadow">
-                    <img src="img/img6.png" class="card-img-top">
-                    <div class="card-body">
-                        <span class="badge bg-secondary">
-                            Exhibición
-                        </span>
-                        <h4 class="mt-3">
-                            Autos Clásicos
-                        </h4>
-
-                        <p>
-
-                            El Desfile de Autos Clásicos y Antiguos es uno de los eventos más esperados y con mayor
-                            tradición de la Feria de las Flores de Medellín.
-
-                            ¿Qué es? Es una impresionante caravana rodante compuesta por cientos de vehículos de época
-                            como
-                            automóviles de colección, joyas automotrices de antaño y camiones militares históricos
-                            perfectamente conservados y restaurados.
-
-                            El recorrido: Los autos recorren las principales vías de la ciudad y municipios cercanos
-                            ante la
-                            mirada de miles de espectadores apostados en las calles.
-
-                            La cultura: Mucho más que una exhibición de motores, es un museo en movimiento donde los
-                            participantes y el público suelen vestirse con la moda de la época de sus vehículos,
-                            convirtiéndolo en un nostálgico viaje al pasado que celebra la historia automotriz y la
-                            alegría
-                            de la feria.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav gap-lg-4 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link nav-active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="quienesSomos.html">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </main>
+      </nav>
+    </div>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <main class="container my-5">
+    <h1 class="text-center fw-bold text-warning mb-5">
+      Noticias de la Feria de las Flores
+    </h1>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="img/img4.png" class="card-img-top" alt="Desfile de Silleteros" />
+          <div class="card-body">
+            <span class="badge bg-success"> Tradición </span>
+            <h4 class="mt-3">Desfile de Silleteros</h4>
+
+            <p>
+              El Desfile de los Silleteros es el evento central y más
+              emblemático de la Feria de las Flores que se realiza cada año en
+              Medellín, Antioquia (Colombia). ¿Qué es? Es un colorido desfile
+              donde campesinos de la vereda Santa Elena (y otros
+              corregimientos cercanos) cargan sobre sus espaldas silletas
+              hechas artesanalmente con miles de flores naturales. El origen:
+              Las silletas eran tradicionalmente un medio de transporte de
+              carga y personas utilizado por los silleteros en la época
+              colonial y republicana para bajar sus productos agrícolas y
+              flores hasta Medellín. El significado: Es un homenaje a la
+              tradición, al trabajo del campesino antioqueño, a la cultura
+              silletera y a la riqueza floral de la región, la cual fue
+              declarada Patrimonio Cultural de la Nación.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="img/images.jpeg" class="card-img-top" />
+          <div class="card-body">
+            <span class="badge bg-primary"> Música </span>
+            <h4 class="mt-3">Conciertos</h4>
+
+            <p>
+              Los conciertos de la Feria de las Flores se dividen en dos
+              grandes experiencias: El Súper Concierto (Estadio Atanasio
+              Girardot): El evento masivo privado más esperado, que reúne a
+              figuras estelares de la música urbana, popular, vallenata y
+              tropical (con artistas como Carín León y Silvestre Dangond).
+              Conciertos y Tablados Gratuitos: Eventos abiertos al público
+              distribuidos por comunas, corregimientos y parques culturales,
+              que llevan orquestas, música tradicional y fiesta popular a toda
+              la ciudad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="img/img2.png" class="card-img-top" />
+          <div class="card-body">
+            <span class="badge bg-danger"> Cultura </span>
+            <h4 class="mt-3">Eventos culturales</h4>
+
+            <p>
+              La cultura de la Feria de las Flores es la máxima expresión de
+              la identidad antioqueña, donde convergen la tradición campesina,
+              la hospitalidad y la alegría de su gente. Gira en torno al
+              orgullo por el campo, la riqueza floral de la región y la música
+              popular como la trova y el despecho, convirtiendo las calles en
+              un punto de encuentro para celebrar las raíces, el folclor y la
+              vida en comunidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow">
+          <img src="img/bandeja.jpg" class="card-img-top" />
+          <div class="card-body">
+            <span class="badge bg-warning text-dark"> Gastronomía </span>
+            <h4 class="mt-3">Gastronomía Antioqueña</h4>
+
+            <p>
+              La gastronomía paisa es una cocina tradicional, abundante y
+              reconfortante, nacida de la herencia campesina de la región
+              antioqueña. Se caracteriza por el uso de ingredientes locales
+              como el maíz, el fríjol, el plátano, la carne de res y el cerdo,
+              dando como resultado platos tan emblemáticos como la bandeja
+              paisa, la arepa de maíz, la mazamorra y los calentaos, cargados
+              de sabor y tradición hogareña.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <div class="card h-100 shadow">
+          <img src="img/img6.png" class="card-img-top" />
+          <div class="card-body">
+            <span class="badge bg-secondary"> Exhibición </span>
+            <h4 class="mt-3">Autos Clásicos</h4>
+
+            <p>
+              El Desfile de Autos Clásicos y Antiguos es uno de los eventos
+              más esperados y con mayor tradición de la Feria de las Flores de
+              Medellín. ¿Qué es? Es una impresionante caravana rodante
+              compuesta por cientos de vehículos de época como automóviles de
+              colección, joyas automotrices de antaño y camiones militares
+              históricos perfectamente conservados y restaurados. El
+              recorrido: Los autos recorren las principales vías de la ciudad
+              y municipios cercanos ante la mirada de miles de espectadores
+              apostados en las calles. La cultura: Mucho más que una
+              exhibición de motores, es un museo en movimiento donde los
+              participantes y el público suelen vestirse con la moda de la
+              época de sus vehículos, convirtiéndolo en un nostálgico viaje al
+              pasado que celebra la historia automotriz y la alegría de la
+              feria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" class="py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-auto mb-4">
+          <h4 class="title">Autores</h4>
+          <ul class="list-unstyled footer-list">
+            <li>Dilsia Lamadrid Torres</li>
+            <li>Angélica Yessenia García</li>
+            <li>Mónica Jazmín Díaz</li>
+            <li>César Restrepo</li>
+            <li>Santiago David García</li>
+          </ul>
+        </div>
+
+        <div class="col-md-auto mb-4">
+          <h4 class="title">Información</h4>
+          <p class="mb-2">
+            <strong>Correo:</strong><br />
+            g3@feriadelasflores.com
+          </p>
+
+          <p class="mb-0">
+            <strong>Proyecto:</strong><br />
+            Feria de las Flores 2026
+          </p>
+        </div>
+
+        <div class="col-md-auto mb-4">
+          <h4 class="title">Síguenos</h4>
+
+          <ul class="list-unstyled footer-list">
+            <li>
+              <a href="#" class="footer-link">
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <i class="fa-brands fa-youtube"></i> YouTube
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="text-center">
+        <small>© 2026 Feria de las Flores. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
